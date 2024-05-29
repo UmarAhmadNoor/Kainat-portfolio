@@ -1,0 +1,56 @@
+.maincontwork
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 75vh;
+    position: relative;
+}
+.maincontwork img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    
+}
+.innercontwork
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 30px;
+}
+.workheadings
+{
+    display: flex;
+     align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+  
+}
+.gridposition
+{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 5fr);
+    align-items: center;
+    gap: 108px;
+    grid-row-gap: 0px; 
+    grid-column-gap: 0px ;
+}
+.headingpic
+{
+    width: 40px;
+    height: 40px;
+}
+.workheadingspara
+{
+    font-size: 24px;
+    cursor: pointer;
+
+}

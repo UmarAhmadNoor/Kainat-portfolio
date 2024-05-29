@@ -1,0 +1,72 @@
+
+.maincontainer {
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.maincontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+.innercontainer {
+    top: 12%;
+    left: 20%;
+    position: absolute;
+    font-size: 113.3px;
+    color: #fff;
+    font-family: YAFdJs2qTWQ-0;
+    font-weight: 300;
+    line-height: 120px;
+    animation: slideIn 2s ease-out;
+}
+
+
+.Homebtn {
+    background-color: rgb(2, 230, 230);
+    border: 1px solid rgb(2, 230, 230);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Homebtn:hover {
+    background-color: rgb(0, 200, 200);
+    transform: scale(1.1);
+}
+
+.homebutton {
+    margin-top: -80px;
+    /* animation: buttonFadeIn 3s ease-in-out 1s; */
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes buttonFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

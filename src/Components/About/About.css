@@ -1,0 +1,81 @@
+/* Main Container for About Section */
+.maincontainerabout {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Video Styling */
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: backgroundFadeIn 3s ease-in-out;
+}
+
+/* Inner Container for About Section */
+.innercontabout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    color: #0a1a44;
+    font-weight: bolder;
+    animation: contentFadeIn 2s ease-in-out;
+}
+
+/* Heading Styling */
+.aboutheading {
+    font-size: 74px;
+   
+    animation: slideInFromLeft 2s ease-out;
+}
+
+/* Paragraph Styling */
+.aboutpara {
+    font-size: 32px;
+    width: 900px;
+    font-weight: 700;
+  
+    animation: slideInFromRight 2s ease-out;
+}
+
+/* Keyframe Animations */
+@keyframes backgroundFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes contentFadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
